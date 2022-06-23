@@ -1,8 +1,6 @@
-
-const mysql = require('mysql2');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
-
+const db = require('./db/connection');
 
 function menu(){
     return inquirer.prompt([
@@ -14,10 +12,55 @@ function menu(){
         }
     ])
     .then(function(userChoice){
-        console.log(userChoice.title);
+        //console.log(userChoice.title);
+        if (userChoice.title==='View all departments'){
+            viewDept()
+        }
+        if (userChoice.title==='View all employees'){
+            viewEmployees()
+        }
+        if (userChoice.title==='View all roles'){
+            viewRoles()
+        }
+        if (userChoice.title==='Add a department'){
+            addDepartment()
+        }
+        if (userChoice.title==='Add a role'){
+            addRole()
+        }
+        if (userChoice.title==='Add an employee'){
+            addEmployee()
+        }
+        if (userChoice.title==='Update employee role'){
+            updateRole()
+        }
     })
 }
+function viewDept(){
+const sql = `SELECT * FROM department`
 
+db.query(sql, function(err, results){
+    console.table(results)
+})
+}
+function viewEmployees(){
+
+}
+function viewRoles(){
+
+}
+function addDepartment(){
+
+}
+function addRole(){
+
+}
+function addEmployee(){
+
+}
+function updateRole(){
+    
+}
 
 
 
