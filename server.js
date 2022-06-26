@@ -7,7 +7,7 @@ function menu(){
         {
             type:'list',
             name: 'title',
-            message:'What would you like to track?',
+            message:'What would you like to do?',
             choices: ['View all departments', 'View all roles','View all employees', 'Add a department','Add a role', 'Add an employee','Update employee role']
         }
     ])
@@ -44,22 +44,47 @@ db.query(sql, function(err, results){
 })
 }
 function viewEmployees(){
+const sql = `SELECT * FROM employee`
 
+db.query(sql, function(err, results){
+    console.table(results)
+})
 }
 function viewRoles(){
+const sql= `SELECT * FROM role`
+
+db.query(sql, function(err, results){
+    console.table(results)
+})
 
 }
 function addDepartment(){
+    const sql = `SELECT * FROM department`
 
+    db.query(sql, function(err, results){
+        console.table(results)
+    })
 }
 function addRole(){
+    const sql= `SELECT * FROM role`
 
+    db.query(sql, function(err, results){
+        console.table(results)
+    })
 }
 function addEmployee(){
+    const sql = `INSERT INTO employee * FROM employee`
 
+    db.query(sql, function(err, results){
+        console.table(results)
+    })
 }
 function updateRole(){
-    
+    const sql= `UPDATE * FROM role`
+
+    db.query(sql, function(err, results){
+        console.table(results)
+    })    
 }
 
 
