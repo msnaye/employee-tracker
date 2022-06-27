@@ -1,5 +1,13 @@
 # Employee-Tracker
 
+## Table of Contents
+
+- [User Story](#User-Story)
+- [Acceptance Criteria](#Acceptance-Criteria)
+- [Languages](#Languages)
+- [Contact Me](#Contact-Me)
+- [Video Link](#Video-Link)
+
 ## User Story
 
 AS A business owner
@@ -25,3 +33,19 @@ WHEN I choose to add an employee
 THEN I am prompted to enter the employee’s first name, last name, role, and manager, and that employee is added to the database
 WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database
+
+## Languages
+
+- JavaScript
+
+## Contact Me
+
+[Github](https://github.com/msnaye)
+[linkedin](https://www.linkedin.com/in/mayra-ibarra-78588588/)
+
+## Video Link
+
+[Video Link]()
+
+
+
