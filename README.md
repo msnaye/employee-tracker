@@ -45,7 +45,7 @@ THEN I am prompted to select an employee to update and their new role and this i
 
 ## Video Link
 
-[Video Link](chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/app.html#/files/312d03d3-95ee-452e-y102-7f7a41012599)
+[Video Link](https://watch.screencastify.com/v/cnJ6bwuvJvQyLQXyctrr)
 
 
 
